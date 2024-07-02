@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.png">
+    <title>AI Tools Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="hero-image">
+                <img src="AI1.jpg" alt="Hero Image">
+                <div class="hero-text">
+                    <h1 class="heado">AI Tools Survey</h1>
+                    <p class="heado">Help us understand the impact of AI tools on academic performance.</p>
+                </div>
+            </div>
+        </header>
+        
+		<br>
+        <br>
+		
+		<form id="surveyForm" name="surveyForm" netlify>
+            <div class="question">
+                <label for="usage">How often do you use AI tools (e.g., ChatGPT, code assistants) for your academic work?</label>
+                <select name="usage" id="usage" required>
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Rarely">Rarely</option>
+                    <option value="Never">Never</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+            <div class="question">
+                <label for="impact">Since using AI tools, how would you rate the impact on your academic performance?</label>
+                <input type="range" name="impact" id="impact" min="1" max="5" required>
+                <div class="scale-labels">
+                    <label for="impact-1">1 - Very Negative</label>
+                    <label for="impact-2">2 - Negative</label>
+                    <label for="impact-3">3 - Neutral</label>
+                    <label for="impact-4">4 - Positive</label>
+                    <label for="impact-5">5 - Very Positive</label>
+                </div>
+            </div>
+            <div class="question">
+                <label for="marks_range">In which range do your academic marks fall since you started using AI tools?</label>
+                <select name="marks_range" id="marks_range" required>
+                    <option value="0-39">0-39</option>
+                    <option value="40-59">40-59</option>
+                    <option value="60-79">60-79</option>
+                    <option value="80-100">80-100</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="question">
+                <label for="hours_per_week">On average, how many hours per week do you spend using AI tools for your studies?</label>
+                <select name="hours_per_week" id="hours_per_week" required>
+                    <option value="0-2 hours">0-2 hours</option>
+                    <option value="3-5 hours">3-5 hours</option>
+                    <option value="6-8 hours">6-8 hours</option>
+                    <option value="9-11 hours">9-11 hours</option>
+                    <option value="12 or more hours">12 or more hours</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="question">
+                <label for="benefit">On a scale of 1 to 5, how beneficial do you find AI tools for enhancing your research activities?</label>
+                <input type="range" name="benefit" id="benefit" min="1" max="5" required>
+                <div class="scale-labels">
+                    <label for="benefit-1">1 - Not Beneficial</label>
+                    <label for="benefit-2">2 - Slightly Beneficial</label>
+                    <label for="benefit-3">3 - Moderately Beneficial</label>
+                    <label for="benefit-4">4 - Beneficial</label>
+                    <label for="benefit-5">5 - Very Beneficial</label>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="question">
+                <label for="challenging">On a scale of 1 to 5, how challenging do you find technical issues when using AI tools?</label>
+                <input type="range" name="challenging" id="challenging" min="1" max="5" required>
+                <div class="scale-labels">
+                    <label for="challenging-1">1 - Not Challenging</label>
+                    <label for="challenging-2">2 - Slightly Challenging</label>
+                    <label for="challenging-3">3 - Moderately Challenging</label>
+                    <label for="challenging-4">4 - Challenging</label>
+                    <label for="challenging-5">5 - Very Challenging</label>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="question">
+                <label for="grade_improvement">By what percentage do you believe your grades have improved since you started using AI tools?</label>
+                <select name="grade_improvement" id="grade_improvement" required>
+                    <option value="0-19%">0-19%</option>
+                    <option value="20-39%">20-39%</option>
+                    <option value="40-59%">40-59%</option>
+                    <option value="60-79%">60-79%</option>
+                    <option value="80-100%">80-100%</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
